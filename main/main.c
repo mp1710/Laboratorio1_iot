@@ -11,8 +11,7 @@ void app_main(void)
     rgb_led_init();
 
     //Se crea un loop para que cambie de color intermitentemente
-    while (1)
-    {
+    while (1)    {
         // ROJO
         // Se llama a la función rgb_led_rojo() para encender el LED en color rojo, 
         // se imprime en consola el color y ademas se espera BLINK_PERIOD_MS antes de continuar.
@@ -39,3 +38,4 @@ void app_main(void)
         printf("Color: APAGADO\n");
         delay_ms(BLINK_PERIOD_MS);
     }
+}
